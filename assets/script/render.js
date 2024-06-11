@@ -12,7 +12,7 @@ export const renderTV = (data) => {
                 <span><strong class="rating">Rating:</strong> ${
                     element.rating.average
                 } / 10</span> 
-                <p><strong>Scheduler:</strong> <span>${
+                <p><strong>Scheduled:</strong> <span>${
                     element.schedule.days
                 }, ${element.schedule.time}</span></p>
                 <button class="btn"><a target="_blank" href="../../pages/preview-movie.html?movie-id=${element.id}"><i class="bi bi-camera-reels"></i>Watch</a></button>
@@ -34,7 +34,7 @@ export const renderPreviewMovie = (data) => {
             <p class="preview-movie-title"> <strong> ${data.name}</strong></p>
             <div class="show-content">
                 <img src="${data.image.original}"/>
-                <p>${data.summary}</p>
+                <p class="description">${data.summary}</p>
                 <div class="show-info-content">
                     <h4>Show Info</h4>
                     <p><strong>Network: </strong><span>${data.network.name}</span> (${data.premiered.slice(0, 4)} - ${data.ended.slice(0, 4)})</p>
@@ -42,7 +42,7 @@ export const renderPreviewMovie = (data) => {
                     <p><strong>Status: </strong>${data.status}</p>
                     <p><strong>Show Type: </strong>${data.type}</p>
                     <p><strong>Genres: </strong>${data.genres[0] ? data.genres[0]: ""}  ${data.genres[1] ? " | " + data.genres[1]   : ""}  ${data.genres[2] ? " | " +data.genres[2]: ""}</p>
-                    <p><strong>Official site: </strong><a href="${data.network.officialSite}"> ${data.network.officialSite} </a></p>
+                    <p><strong>Official site: </strong><a href="${data.network.officialSite}"> ${data.network.officialSite}</a></p>
                 </div>
             </div>
         </div>

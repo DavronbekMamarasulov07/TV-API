@@ -6,7 +6,6 @@ const loadTV = async () =>{
         const response = await axios("/shows")
         let data = response.data
         renderTV(data)
-        console.log(data);
     } catch (error) {
         console.log(error);
     }

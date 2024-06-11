@@ -5,8 +5,9 @@
     font-family: "Work Sans", sans-serif;
 }
 body{
-    background-color: #FF3CAC;
-    background-image: linear-gradient(225deg,#784BA0 0%, #FF3CAC  50%, #2B86C5 100%);
+    background-color: #7d7d7d;
+    background-image: linear-gradient(135deg, #7d7d7d 0%, #9e9e9e 100%);
+    
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -37,9 +38,10 @@ ul{
     flex-direction: column;
     gap: 20px;
     color: #fff;
-    
 
 }
+
+
 
 .movie-card-content{
     width: 100%;
@@ -53,6 +55,7 @@ ul{
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    min-height: 400px;
 }
 
 .show-content img{
