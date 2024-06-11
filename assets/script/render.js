@@ -42,7 +42,7 @@ export const renderPreviewMovie = (data) => {
                     <p><strong>Status: </strong>${data.status}</p>
                     <p><strong>Show Type: </strong>${data.type}</p>
                     <p><strong>Genres: </strong>${data.genres[0] ? data.genres[0]: ""}  ${data.genres[1] ? " | " + data.genres[1]   : ""}  ${data.genres[2] ? " | " +data.genres[2]: ""}</p>
-                    <p><strong>Official site: </strong><a href="${data.network.officialSite}"> ${data.network.officialSite}</a></p>
+                    <p><strong>Official site: </strong><a href="${data.network.officialSite}"><i class="bi bi-globe-asia-australia"></i> Link</a></p>
                 </div>
             </div>
         </div>
