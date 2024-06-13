@@ -1,10 +1,12 @@
 export const renderTV = (data) => {
+    $content.innerHTML = ""
   const $cardFragment = document.createDocumentFragment();
   data.forEach((element) => {
     const $div = document.createElement("div");
     $div.className = "card";
+    $div.setAttribute("data-aos", "fade-right")
     $div.innerHTML = `
-            <a target="_blank" href="../../pages/preview-movie.html?movie-id=${element.id}"><img src="${element.image.medium}"/></a>
+            <a target="_blank" href="../../pages/preview-movie.html?movie-id=${element.id}"><img src="${element.image?.medium}"/></a>
             <small>${element.premiered.slice(0, 4)}</small>
             <div class="card-content">
                 <h3>${element.name} </h3>
@@ -23,6 +25,11 @@ export const renderTV = (data) => {
 
   $content.appendChild($cardFragment);
 };
+
+
+
+
+
 
 export const renderPreviewMovie = (data) => {
   const $cardFragment = document.createDocumentFragment();
